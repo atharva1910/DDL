@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
     {
         CalendarView mainCal = (CalendarView)findViewById(R.id.MainCalendar);
         Intent dashBoardIntent = new Intent(MainActivity.this, Dashboard.class);
-        dashBoardIntent.putExtra("ARG_LONG_DATE", mainCal.getDate());
+        dashBoardIntent.putExtra("ARG_LONG_DATE", new Long(mainCal.getDate()));
         MainActivity.this.startActivity(dashBoardIntent);
     }
 }

@@ -12,7 +12,7 @@ import java.util.Date;
 
 public class Dashboard extends AppCompatActivity {
 
-    private long date;
+    private Long date;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
